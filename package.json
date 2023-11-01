@@ -1,6 +1,9 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "author": {
+    "name": "Andre Emelianov"
+  },
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",

@@ -7,6 +7,7 @@ export const store = configureStore({
   reducer: {
     [api.reducerPath]: api.reducer,
     auth,
+    
   },
   middleware: (getDefaultMiddleware) => {
     return getDefaultMiddleware().concat(api.middleware).prepend(listenerMiddleware.middleware);

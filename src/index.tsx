@@ -13,11 +13,12 @@ import Auth from './features/auth/auth';
 import reportWebVitals from './reportWebVitals';
 
 import './index.css';
+import Employees from './pages/employees';
 
 const router = createBrowserRouter([
   {
     path: Paths.home,
-    element: <h1>home</h1>,
+    element: <Employees />,
   },
   {
     path: Paths.login,

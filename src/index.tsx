@@ -2,16 +2,17 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { ConfigProvider, theme } from 'antd';
 
 import { Paths } from './paths/paths';
 import { store } from './app/store';
 import Login from './pages/login';
 import Register from './pages/register';
+import Auth from './features/auth/auth';
 
 import reportWebVitals from './reportWebVitals';
 
 import './index.css';
-import { ConfigProvider, theme } from 'antd';
 
 const router = createBrowserRouter([
   {
@@ -38,7 +39,9 @@ root.render(
         theme={{
           algorithm: theme.darkAlgorithm,
         }}>
-        <RouterProvider router={router} />
+        <Auth>
+          <RouterProvider router={router} />
+        </Auth>
       </ConfigProvider>
     </Provider>
   </React.StrictMode>,

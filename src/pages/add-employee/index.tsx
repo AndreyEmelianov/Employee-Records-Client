@@ -44,7 +44,7 @@ const AddEmployee = () => {
       <Row align="middle" justify="center">
         <EmployeeForm
           title="Добавить сотрудника"
-          btnText="Добавить сотрудника"
+          btnText="Добавить"
           onFinish={handleAddEmployee}
           error={error}
         />

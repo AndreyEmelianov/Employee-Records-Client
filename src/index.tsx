@@ -14,6 +14,7 @@ import reportWebVitals from './reportWebVitals';
 
 import './index.css';
 import Employees from './pages/employees';
+import AddEmployee from './pages/add-employee';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: Paths.register,
     element: <Register />,
+  },
+  {
+    path: Paths.employeeAdd,
+    element: <AddEmployee />,
   },
 ]);
 

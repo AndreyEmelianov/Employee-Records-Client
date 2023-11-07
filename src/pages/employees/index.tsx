@@ -41,9 +41,13 @@ const Employees: React.FC = () => {
     }
   }, [navigate, user]);
 
+  const onAddUser = () => {
+    navigate(Paths.employeeAdd);
+  };
+
   return (
     <Layout>
-      <Button type="primary" onClick={() => null} icon={<PlusCircleOutlined />}>
+      <Button type="primary" onClick={onAddUser} icon={<PlusCircleOutlined />}>
         Добавить сотрудника
       </Button>
       <Table
